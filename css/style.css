@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+}
+
+header {
+    display:flex;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(52, 81, 154);
+    color: rgb(255,196,49);
+    height: 70px;
+}
+
+#text {
+    display: flex;
+    width: 180px;
+    height: 30px;
+    justify-content: center;
+    margin: 70px auto auto auto;
+}
+
+#button {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto auto auto;
+}
+
+main {
+    flex-grow: 1;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+
+.info {
+   display: flex;
+    justify-content: center;
+    height: 500px;
+    width: 50%;
+    align-items: center;
+    margin-top: 140px;
+    float: left;
+}
+
+#stats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width:50%;
+    margin-top: 140px;
+    float: right;
+}
+
+.pokemon {
+    display: flex, 1;
+}
+
+#image {
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    height: 150px;
+    width: 150px;
+    margin: 0 0 0 0;
+}
+
