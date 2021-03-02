@@ -12,10 +12,13 @@ let $specialAttack = $('#specialAttack')
 let $specialDefense = $('#specialDefense')
 let $speed = $('#speed')
 let $sprite = $('#sprite')
+let $pkmnType = $('#type')
 /*----- cached element references -----*/
 /*----- event listeners -----*/
 $('form').on('submit', handleSubmit)
 /*----- functions -----*/
+
+
 
 function handleSubmit(evt) {
     evt.preventDefault()
@@ -34,9 +37,30 @@ $text.val('')
         })
     }
 
+
+    // $.ajax(BASE_URL + 'charizard')
+    // .then(function(data) {
+    //     const ability = data.abilities.values()
+    //     console.log(ability)
+    // })
+
+
+
 function render() {
+    const type = pkmnData.types.map(function(el) {
+        return el.type.name
+    })
+    // console.log(type)
+
+    const ability = pkmnData.abilities.map(function (el) {
+        return el.ability.name
+    })
+    // console.log(ability)
+
+    $pkmnType.text(type)
+    $pkmnAbilities.text(ability)
     $pkmnName.text(pkmnData.species.name)
-    // $pkmnAbilities.attr(pkmnData.abilities.ability)
+    $pkmnType.val(pkmnData.abilities[0, 1].ability)
     $health.text(pkmnData.stats[0].base_stat)
     $attack.text(pkmnData.stats[1].base_stat)
     $defense.text(pkmnData.stats[2].base_stat)
