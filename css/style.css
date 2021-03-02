@@ -9,6 +9,8 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background-color: #efefbb;
+    background: linear-gradient(to right, #d4d3dd, #efefbb);
 
 }
 
@@ -37,10 +39,16 @@ header {
     justify-content: center;
     align-items: center;
     margin: 10px auto auto auto;
+    box-shadow: 2px, 2px, 2px, 2px;
 }
 
 main {
     flex-grow: 1;
+}
+
+img {
+    height: 80%;
+    width: 80%;
 }
 
 footer {
@@ -48,8 +56,6 @@ footer {
     justify-content: center;
     align-items: flex-end;
 }
-
-
 
 .info {
    display: flex;
@@ -59,6 +65,7 @@ footer {
     align-items: center;
     margin-top: 140px;
     float: left;
+    position: relative;
 }
 
 #stats {
@@ -73,9 +80,15 @@ footer {
 
 .pokemon {
     display: flex, 1;
+    font-family: 'Press Start 2P', cursive;
 }
 
-#image {
+img {
+    display: flex;
+    margin: 0 0 0 0;
+}
+
+#sprite {
     display: flex;
     justify-content: left;
     flex-direction: row;
@@ -87,5 +100,9 @@ footer {
 #baseStats {
     display: flex;
     align-items: flex-start;
+}
+
+#name {
+    text-transform: capitalize;
 }
 
