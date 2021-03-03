@@ -15,4 +15,4 @@ An app that allows you to search for Pokemon, and disaply any relevant informati
 Before searching for a Pokemon
 ![before searching](./images/before-searching.png)
 After searching
-![after searching](./images/after-searching.png)
+![after searaching](./images/ninetales-search.png)
