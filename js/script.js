@@ -13,13 +13,11 @@ let $specialDefense = $('#specialDefense')
 let $speed = $('#speed')
 let $sprite = $('#sprite')
 let $pkmnType = $('#type')
-/*----- cached element references -----*/
+
 /*----- event listeners -----*/
 $('form').on('submit', handleSubmit)
+
 /*----- functions -----*/
-
-
-
 function handleSubmit(evt) {
     evt.preventDefault()
 
@@ -60,7 +58,6 @@ function render() {
     $pkmnType.text(type)
     $pkmnAbilities.text(ability)
     $pkmnName.text(pkmnData.species.name)
-    $pkmnType.val(pkmnData.abilities[0, 1].ability)
     $health.text(pkmnData.stats[0].base_stat)
     $attack.text(pkmnData.stats[1].base_stat)
     $defense.text(pkmnData.stats[2].base_stat)

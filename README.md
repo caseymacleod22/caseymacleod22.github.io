@@ -1,6 +1,6 @@
 ## Competitive Pokemon Library
 
-An app that allows you to search for Pokemon, and disaply any relevant information for that Pokemon.
+An app that allows you to search for Pokemon, and disaply any relevant information for that Pokemon regarding competitive battling.
 
 ## Technologies Used
 - HTML
@@ -12,4 +12,7 @@ An app that allows you to search for Pokemon, and disaply any relevant informati
 
 ## Screenshots
 
-![wireframe](./images/project-1-screenshot.png)
+Before searching for a Pokemon
+![before searching](./images/before-searching.png)
+After searching
+![after searching](./images/after-searching.png)

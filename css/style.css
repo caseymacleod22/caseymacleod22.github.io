@@ -23,6 +23,7 @@ header {
     background-color: rgb(52, 81, 154);
     color: rgb(255,196,49);
     height: 70px;
+    box-shadow: 3px 3px 7px 3px #808080
 }
 
 #text {
@@ -39,16 +40,10 @@ header {
     justify-content: center;
     align-items: center;
     margin: 10px auto auto auto;
-    box-shadow: 2px, 2px, 2px, 2px;
 }
 
 main {
     flex-grow: 1;
-}
-
-img {
-    height: 80%;
-    width: 80%;
 }
 
 footer {
@@ -66,6 +61,7 @@ footer {
     margin-top: 140px;
     float: left;
     position: relative;
+    box-shadow: 3px 3px 9px 3px #808080;
 }
 
 #stats {
@@ -76,25 +72,22 @@ footer {
     width:50%;
     margin-top: 140px;
     float: right;
+    box-shadow: 3px 3px 9px 3px #808080;
 }
 
 .pokemon {
     display: flex, 1;
     font-family: 'Press Start 2P', cursive;
-}
-
-img {
-    display: flex;
-    margin: 0 0 0 0;
+    font-size: medium;
 }
 
 #sprite {
     display: flex;
     justify-content: left;
     flex-direction: row;
-    height: 150px;
-    width: 150px;
-    margin: 0 0 0 0;
+    height: 200px;
+    width: 200px;
+    margin-right: 60px;
 }
 
 #baseStats {
@@ -102,7 +95,10 @@ img {
     align-items: flex-start;
 }
 
-#name {
+#name, #type, #abilities {
     text-transform: capitalize;
 }
 
+footer {
+    font-size: x-small;
+}
