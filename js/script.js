@@ -69,3 +69,4 @@ function render() {
         alt: pkmnData.name
     })
 }
+

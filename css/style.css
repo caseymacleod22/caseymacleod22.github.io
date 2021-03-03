@@ -73,6 +73,7 @@ footer {
     margin-top: 140px;
     float: right;
     box-shadow: 3px 3px 9px 3px #808080;
+    flex-wrap: wrap;
 }
 
 .pokemon {
@@ -102,3 +103,12 @@ footer {
 footer {
     font-size: x-small;
 }
+
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
