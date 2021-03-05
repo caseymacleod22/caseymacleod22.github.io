@@ -13,9 +13,9 @@ An app that allows you to search for Pokemon, and disaply any relevant informati
 ## 📸 Screenshots
 
 Before searching for a Pokemon
-![before searching](./images/before-searching.png)
+![before searching](./images/blank-page.png)
 After searching
-![after searaching](./images/ninetales-search.png)
+![after searaching](./images/after-search.png)
 
 ## 🛠 Future Improvements
 - Live track usage stats to update how common certain pokemon are as well as common movesets/ items.

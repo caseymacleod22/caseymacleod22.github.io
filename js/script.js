@@ -12,6 +12,7 @@ let $specialAttack = $('#specialAttack')
 let $specialDefense = $('#specialDefense')
 let $speed = $('#speed')
 let $sprite = $('#sprite')
+let $shiny = $('#shiny')
 let $pkmnType = $('#type')
 
 /*----- event listeners -----*/
@@ -24,49 +25,42 @@ function handleSubmit(evt) {
 const pokemon = $text.val()
 $text.val('')
 
-    $.ajax(BASE_URL + pokemon)
+    $.ajax(BASE_URL + pokemon.toLowerCase())
     .then(function(data) {
-        console.log('Data: ', data)
+        // console.log('Data: ', data)
         // console.log(pokemon)
         pkmnData = data
         render()
     }, function(error) {
         console.log('Error: ', error)
         })
-    }
-
-
-    // $.ajax(BASE_URL + 'charizard')
-    // .then(function(data) {
-    //     const ability = data.abilities.values()
-    //     console.log(ability)
-    // })
-
-
+}
 
 function render() {
     const type = pkmnData.types.map(function(el) {
         return el.type.name
     })
-    // console.log(type)
 
     const ability = pkmnData.abilities.map(function (el) {
         return el.ability.name
     })
-    // console.log(ability)
 
-    $pkmnType.text(type)
-    $pkmnAbilities.text(ability)
-    $pkmnName.text(pkmnData.species.name)
-    $health.text(pkmnData.stats[0].base_stat)
-    $attack.text(pkmnData.stats[1].base_stat)
-    $defense.text(pkmnData.stats[2].base_stat)
-    $specialAttack.text(pkmnData.stats[3].base_stat)
-    $specialDefense.text(pkmnData.stats[4].base_stat)
-    $speed.text(pkmnData.stats[5].base_stat)
-    $sprite.attr({
-        src: pkmnData.sprites.front_default,
-        alt: pkmnData.name
+        $pkmnType.text(type)
+        $pkmnAbilities.text(ability)
+        $pkmnName.text(pkmnData.species.name)
+        $health.text(pkmnData.stats[0].base_stat)
+        $attack.text(pkmnData.stats[1].base_stat)
+        $defense.text(pkmnData.stats[2].base_stat)
+        $specialAttack.text(pkmnData.stats[3].base_stat)
+        $specialDefense.text(pkmnData.stats[4].base_stat)
+        $speed.text(pkmnData.stats[5].base_stat)
+        $sprite.attr({
+            src: pkmnData.sprites.front_default,
+            alt: pkmnData.name
     })
-}
+        $shiny.attr({
+            src: pkmnData.sprites.front_shiny,
+            alt: pkmnData.name
+        })
+    } 
 

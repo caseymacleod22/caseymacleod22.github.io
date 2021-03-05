@@ -53,15 +53,19 @@ footer {
 }
 
 .info {
-   display: flex;
-    justify-content: center;
+    display: flex;
+    justify-content: center; 
     height: 500px;
     width: 50%;
     align-items: center;
     margin-top: 140px;
     float: left;
-    position: relative;
     box-shadow: 3px 3px 9px 3px #808080;
+}
+
+.info > .picture {
+    display: flex;
+    flex-direction: column;
 }
 
 #stats {
@@ -88,7 +92,20 @@ footer {
     flex-direction: row;
     height: 200px;
     width: 200px;
-    margin-right: 60px;
+    /* margin-right: 60px;
+    margin-bottom: 180px; */
+}
+
+#shiny {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 140px;
+    width: 140px;
+    /* margin-top: 200px;
+    margin-right: 60px; */
 }
 
 #baseStats {
@@ -100,15 +117,14 @@ footer {
     text-transform: capitalize;
 }
 
+.details {
+    color: rgb(207, 160, 40);
+}
+
+#name, #type, #abilities, #health, #attack, #defense, #specialAttack, #specialDefense, #speed {
+    color:rgb(52, 81, 154);
+}
+
 footer {
     font-size: x-small;
 }
-
-.dropbtn {
-    background-color: #3498DB;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-  }
